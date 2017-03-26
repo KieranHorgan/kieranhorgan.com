@@ -217,6 +217,9 @@ Now, onto the code...
 						Team Ireland member at IOI 2016 in Kazan, Russia
 					</li>
 					<li>
+						Came 1<sup>st</sup> in the 2017 Irish Collegiate Programming Competition (IrlCPC) out of the secondary school teams and 4<sup>th</sup> overall, including 3<sup>rd</sup> level teams.
+					</li>
+					<li>
 						Represented Ireland with my school at the 2016 Vex Robotics World Championships
 					</li>
 					<li>
@@ -229,6 +232,8 @@ Now, onto the code...
 						Mentor at <a href="http://coderdojomallow.com">CoderDojo Mallow</a> for about 4 years, teaching HTML, CSS, JavaScript and Python to young people aged from 7 to 17 
 					</li>
 				</ul>
+
+				<img src="images/AIPO.jpg">
 
 			</div>
 		</section>
