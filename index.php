@@ -120,7 +120,7 @@ Now, onto the code...
 
 				<!-- div containing the image is so that the image can be centered in the remaining space -->
 				<div>
-					<img src="images/DTS image.jpg" alt="(Proper) Image to be put here">
+					<img src="images/DTS image.jpg" alt="Picture of me, Kieran Horgan, at the 2017 Dublin Tech Summit">
 				</div>
 			</div>
 
@@ -217,7 +217,7 @@ Now, onto the code...
 						Team Ireland member at IOI 2016 in Kazan, Russia
 					</li>
 					<li>
-						Came 1<sup>st</sup> in the 2017 Irish Collegiate Programming Competition (IrlCPC) out of the secondary school teams and 4<sup>th</sup> overall, including 3<sup>rd</sup> level teams.
+						Came 1<sup>st</sup> in the 2017 Irish Collegiate Programming Competition (IrlCPC) out of the secondary school teams and 4<sup>th</sup> overall, including 3<sup>rd</sup> level teams
 					</li>
 					<li>
 						Represented Ireland with my school at the 2016 Vex Robotics World Championships
@@ -293,13 +293,15 @@ if (isset($_POST['submit'])) {
 		       'Reply-To: '.$email."\r\n" . 
 			   'X-Mailer: PHP/' . phpversion();
 
+	// Success
     if (mail('info@kieranhorgan.com', $subject, $body, $headers) and mail('kieranhorgancom@gmail.com', $subject, $body, $headers)) { 
         echo("<p>Message sent successfully</p>");
+
+    // Failed
     } else {
 		echo("<p>Something went wrong and your message did not send. Please try again</p>");
     }
 }
-
 			?>
 
 			</div>
