@@ -206,7 +206,7 @@ Now, onto the code...
 --> 	<section id="achievements">
 			<div class="container">
 				<h2>
-					<span>My Achievments &amp; Experience</span>
+					<span>My Achievements &amp; Experience</span>
 				</h2>
 
 				<ul>
@@ -227,6 +227,9 @@ Now, onto the code...
 					</li>
 					<li>
 						Irish Vex Robotics Tournament Champions 2015
+					</li>
+					<li>
+						Worked at <a href="http://wallwebdesign.ie/">Wall Web Design</a> for a week as part of my TY work experience
 					</li>
 					<li>
 						Mentor at <a href="http://coderdojomallow.com">CoderDojo Mallow</a> for about 4 years, teaching HTML, CSS, JavaScript and Python to young people aged from 7 to 17 
@@ -311,25 +314,25 @@ if (isset($_POST['submit'])) {
 		<!-- 2 triggers for javascript scroll effect (see js/main.js), both positioned with CSS-->
 		<div id="greetingHideTrigger"></div>
 
-	<!-- JQuery for easier DOM access -->
-	<script src="js/jquery.min.js"></script>
-	<!-- quickfit.js for resizing text later -->
-	<script src="js/jquery.quickfit.js"></script>
+		<!-- JQuery for easier DOM access -->
+		<script src="js/jquery.min.js"></script>
+		<!-- quickfit.js for resizing text later -->
+		<script src="js/jquery.quickfit.js"></script>
 
-	<script src="js/rellax.js"></script>
+		<script src="js/rellax.js"></script>
 
-	<script src="js/GSAP/TweenLite.min.js"></script>
-	<script src="js/GSAP/EasePack.min.js"></script>
-	<script src="js/GSAP/CSSPlugin.min.js"></script>
+		<script src="js/GSAP/TweenLite.min.js"></script>
+		<script src="js/GSAP/EasePack.min.js"></script>
+		<script src="js/GSAP/CSSPlugin.min.js"></script>
 
-	<script src="js/ScrollMagic.js"></script>
-	<script src="js/animation.gsap.js"></script>
+		<script src="js/ScrollMagic.js"></script>
+		<script src="js/animation.gsap.js"></script>
 
-	<script src="js/hammer.min.js"></script>
-	
-	<!-- Debugging tool for ScrollMagic to show the position of the scroll effect triggers
-	<script src="js/debug.addIndicators.min.js"></script>
-	-->
+		<script src="js/hammer.min.js"></script>
+		
+		<!-- Debugging tool for ScrollMagic to show the position of the scroll effect triggers
+		<script src="js/debug.addIndicators.min.js"></script>
+		-->
 
 	<script src="js/main.js?<?php echo date('l jS \of F Y h:i:s A'); ?>"></script>
 	
