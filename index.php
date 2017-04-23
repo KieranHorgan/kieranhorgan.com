@@ -214,6 +214,9 @@ Now, onto the code...
 						Placed 2<sup>nd</sup> in the 2017 All-Ireland Programming Olympiad
 					</li>
 					<li>
+						Will represent Ireland at IOI 2017 in Tehran, Iran
+					</li>
+					<li>
 						Team Ireland member at IOI 2016 in Kazan, Russia
 					</li>
 					<li>
