@@ -299,10 +299,13 @@ if (isset($_POST['submit'])) {
 		       'Reply-To: '.$email."\r\n" . 
 			   'X-Mailer: PHP/' . phpversion();
 
-	// Success
-    if (mail('info@kieranhorgan.com', $subject, $body, $headers) and mail('kieranhorgancom@gmail.com', $subject, $body, $headers)) { 
-        echo("<p>Message sent successfully</p>");
+	// Failed - Empty Message
+	if($message=='') {
+		echo('<p>The content of the message cannot be empty</p>');
 
+	// Success
+	} else if (mail('info@kieranhorgan.com', $subject, $body, $headers) and mail('kieranhorgancom@gmail.com', $subject, $body, $headers)) { 
+        echo("<p>Message sent successfully</p>");
     // Failed
     } else {
 		echo("<p>Something went wrong and your message did not send. Please try again</p>");
