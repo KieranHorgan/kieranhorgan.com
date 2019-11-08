@@ -118,7 +118,7 @@ main>section {
 #banner::before {
   content: "";
   display: block;
-  height: 50%;
+  height: 33%;
 }
 
 #banner h1 {
@@ -135,6 +135,10 @@ main>section {
 #banner p:nth-child(3) { animation-delay: 4s; }
 
 @media (min-width: 36rem) {
+  #banner::before {
+    height: 50%;
+  }
+
   #banner p {
     transform: translate(0, -50%);
     height: 0px;
