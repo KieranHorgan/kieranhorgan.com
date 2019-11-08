@@ -1,0 +1,18 @@
+:root {
+  font-family: 'Comfortaa', cursive;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: grey;
+}
+
+p {
+  font-size: 20em;
+  background: transparent;
+  /* Color fallback */
+  color: #f00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
