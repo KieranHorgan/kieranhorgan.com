@@ -45,9 +45,15 @@
       </section>
 
       <section id="about">
-        <figure>
-          <img src="images/kieran_at_ioi.webp" alt="Picture of me at IOI" title="Me at IOI"/>
-        </figure>
+        <picture title="Me at IOI">
+          <source media="(min-width: 1000px) or (min-height: 1300px)" srcset="images/kieran_at_ioi.webp" type="image/webp" />
+          <source media="(min-width: 1000px) or (min-height: 1300px)" srcset="images/kieran_at_ioi.jpg" />
+          <source media="(min-width: 750px) or (min-height: 975px)" srcset="images/kieran_at_ioi_medium.webp" type="image/webp" />
+          <source media="(min-width: 750px) or (min-height: 975px)" srcset="images/kieran_at_ioi_medium.jpg" />
+          <source srcset="images/kieran_at_ioi_small.webp" type="image/webp" />
+          <source srcset="images/kieran_at_ioi_small.jpg" />
+          <img src="images/kieran_at_ioi.jpg" alt="Picture of me at IOI" />
+        </picture>
         <h2>A lil' bit about me</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
