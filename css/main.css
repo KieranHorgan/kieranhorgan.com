@@ -22,6 +22,9 @@
   scroll-snap-type: y proximity;
   scrollbar-color: var(--main-orange-color) #eee;
   scrollbar-width: thin;
+
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 ::-webkit-scrollbar-track {
@@ -68,7 +71,7 @@ nav button {
   width: 5em;
   height: 5em;
   padding: .75em;
-  background-color: var(--main-green-color);
+  background-color: var(--dark-green-color);
   border: none;
   border-radius: 50%;
   box-shadow: .05em .05em .4em #777;
@@ -99,11 +102,10 @@ nav button:focus + ul > li, nav li:active {
 nav a {
   border: none;
   display: inline-block;
-  background: var(--main-green-color);
+  background: var(--dark-green-color);
   color: #fff;
   padding: .75em;
   text-decoration: none;
-  font-family: Arial;
   border-radius: 1em;
   box-shadow: .05em .05em .4em #777;
   transition: all .1s;
