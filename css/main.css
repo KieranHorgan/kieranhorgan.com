@@ -92,6 +92,7 @@ nav li {
   display: block;
   position: relative;
   left: 100%;
+  font-weight: 600;
   transition: left .2s;
 }
 
