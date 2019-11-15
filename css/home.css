@@ -75,8 +75,6 @@ main>section {
   box-shadow: 0 0 10px #888;
   color: #fff;
   overflow: hidden;
-  height: auto;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 #about picture {
