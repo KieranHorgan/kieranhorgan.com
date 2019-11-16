@@ -122,7 +122,7 @@ nav button {
 }
 
 nav button:focus {
-  background: var(--darker-green-color);
+  background: var(--dark-green-color);
 }
 
 nav button svg {
