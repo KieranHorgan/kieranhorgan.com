@@ -168,7 +168,7 @@ nav a:active, nav button:active {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40em) and (min-height: 25em) {
   nav {
     top: 50%;
     transform: translate(0, -50%);
