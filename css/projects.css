@@ -1,8 +1,21 @@
+::-webkit-scrollbar-thumb {
+  background-color: #3b3b98;
+}
+
+nav a, nav button, header {
+  background: #3b3b98;
+}
+
+
 header h1 {
+  margin: 0;
+  padding: 1em;
   text-align: center;
+  color: #fff;
 }
 
 main {
+  background: #f9f9f9;
 }
 
 main > ul {
@@ -33,6 +46,7 @@ main > ul > li {
 
 main > ul > li > a {
   display: block;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   text-decoration: none;
@@ -40,22 +54,25 @@ main > ul > li > a {
   text-align: center;
   box-sizing: border-box;
   transition: .05s transform;
+  box-shadow: .05em .05em .4em rgba(0,0,0,.2);
 }
 
-main > ul > li > a:hover, main > ul > li > a:focus {
+main > ul > li > a:hover {
   border-color: #aaa;
   transform: translate(-2px, -4px);
+  box-shadow: .05em .05em .4em rgba(0,0,0,.15);
 }
 main > ul > li > a:active {
   border-color: #aaa;
   transform: translate(2px, 4px);
+  box-shadow: .05em .05em .3em rgba(0,0,0,0.3);
 }
 
 main h2, main p {
   padding: 0 1em;
 }
 main h2 {
-  color: #388e3c;
+  color: #3b3b98;
 }
 main p {
   color: #444;
@@ -66,4 +83,8 @@ main img {
   width: 100%;
   align-self: flex-end;
   border-radius: 4px;
+}
+
+footer {
+  background: #009432;
 }
