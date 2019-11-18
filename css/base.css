@@ -39,7 +39,7 @@
 :root {
   /* Colors */
   --main-green-color: #4caf50;
-  --dark-green-color: #388e3c;
+  --dark-green-color: #2e7d32;
   --main-orange-color: #ff9300;
 
   font-family: 'Comfortaa', 'Roboto', sans-serif;
@@ -147,13 +147,62 @@ nav a:active, nav button:active {
 footer {
   background: #0c2461;
   color: #fff;
+  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  padding: 1em;
+  max-width: 80em;
 }
 
 footer p {
+  /* display: inline-block; */
   margin: 0;
-  padding: 1em;
+  padding: .5em 0;
+  align-self: start;
 }
 
+footer ul {
+  list-style: none;
+  grid-row: 1 / span 1;
+  padding: .5em 0;
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+}
+footer ul a {
+  display: inline-block;
+  padding: .25em 0;
+  text-decoration: none;
+}
+
+footer svg {
+  width: 1em;
+  padding: .25em;
+  margin-right: .166em;
+  border-radius: .2em;
+  vertical-align: middle;
+  fill: white;
+}
+footer li:nth-child(1) svg { background: #D14836; }
+footer li:nth-child(2) svg { background: #181717; }
+footer li:nth-child(3) svg { background: #0077B5; }
+footer li:nth-child(4) svg { background: #1DA1F2; }
+
+
+@media only screen and (min-width: 60em) {
+  footer {
+    padding: 1em 10vw;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+  }
+  footer ul {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 40em) and (min-height: 25em) {
