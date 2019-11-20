@@ -27,17 +27,18 @@ main {
 
 main h2 {
   font-size: 1.5rem;
-  padding: 4.25rem 0;
+  padding: 0;
+  max-height: 10em;
   grid-column-start: 2;
-  padding-left: 1.5em;
-  border-left: 2px dotted var(--main-primary-color);
   margin: 0;
+  align-self: center;
 }
 
 main img {
   width: 10em;
-  border: 2px solid var(--main-primary-color);
-  border-radius: 100%;
+  max-width: 25vw;
+  padding-right: 1.5em;
+  border-right: 2px dotted var(--main-primary-color);
 }
 
 main > a svg { background: #4a4a4a; }
