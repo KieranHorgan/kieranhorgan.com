@@ -54,7 +54,6 @@ table {
 
 td:nth-child(1n+2) {
   text-align: center;
-  /* font-weight: 600; */
 }
 
 tr>* {
@@ -65,6 +64,13 @@ tr:nth-child(2n) {
 }
 th {
   border-bottom: 2px solid var(--main-primary-color);
+}
+
+.cf-master {
+  font-style: normal;
+  font-family: Arial;
+  font-weight: bold;
+  color: #FF8C00;
 }
 
 footer {
