@@ -1,5 +1,8 @@
 :root {
   --main-primary-color: #ef6c00;
+
+  scrollbar-color: var(--main-primary-color) #eee;
+  scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar-thumb {

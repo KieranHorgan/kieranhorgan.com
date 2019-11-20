@@ -1,4 +1,4 @@
-/* latin */
+/* font-face code from stylesheet provided by Google Fonts */
 @font-face {
   font-family: 'Comfortaa';
   font-style: normal;
@@ -7,7 +7,6 @@
   src: url(https://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4TbMDrMfIA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin */
 @font-face {
   font-family: 'Comfortaa';
   font-style: normal;
@@ -16,23 +15,12 @@
   src: url(https://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin */
 @font-face {
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4Y_LDrMfIA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -140,6 +128,10 @@ nav li {
 nav button:focus + ul > li, nav li:active {
   left: 0;
 }
+nav button:focus {
+  margin-top: -3em;
+  transform: translateY(-4em);
+}
 
 nav a {
   border: none;
@@ -153,12 +145,12 @@ nav a {
   transition: all .1s;
 }
 
-nav a:hover, nav button:hover {
+nav a:hover {
   transform: translate(-1px, -2px);
   box-shadow: .075em .075em .5em rgba(0,0,0,.4);
 }
 
-nav a:active, nav button:active {
+nav a:active {
   transform: translate(1px, 2px);
   box-shadow: .04em .04em .3em rgba(0,0,0,0.3);
 }
@@ -196,7 +188,7 @@ footer ul a {
   text-decoration: none;
 }
 
-svg {
+footer svg, main svg {
   width: 1em;
   padding: .25em;
   margin-right: .166em;

@@ -1,0 +1,72 @@
+:root {
+  --main-primary-color: #c2185b;
+
+  scrollbar-color: var(--main-primary-color) #eee;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-primary-color);
+}
+
+nav a, nav button, header {
+  background: var(--main-primary-color);
+}
+
+header h1 {
+  color: #000;
+  background: #fff;
+  border-bottom: 2px solid var(--main-primary-color);
+  box-shadow: 0px 0px 10px #aaa;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em 4vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main section {
+  flex: 1 1 auto;
+  padding-bottom: 1em;
+  border-bottom: 2px dashed var(--main-primary-color);
+  margin-bottom: 1em;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+main p {
+  text-align: center;
+  margin: .2em;
+  font-size: 1.16em;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 2px;
+}
+
+td:nth-child(1n+2) {
+  text-align: center;
+  /* font-weight: 600; */
+}
+
+tr>* {
+  padding: .5em;
+}
+tr:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+th {
+  border-bottom: 2px solid var(--main-primary-color);
+}
+
+footer {
+  background: var(--main-primary-color);
+}
