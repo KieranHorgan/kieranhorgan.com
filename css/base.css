@@ -65,13 +65,14 @@
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-orange-color);
     background-image: -webkit-linear-gradient(45deg,
+                                              rgba(255, 255, 255, .2) 0%,
                                               rgba(255, 255, 255, .2) 25%,
                                               transparent 25%,
                                               transparent 50%,
                                               rgba(255, 255, 255, .2) 50%,
                                               rgba(255, 255, 255, .2) 75%,
                                               transparent 75%,
-                                              transparent);
+                                              transparent 100%);
 }
 
 body {
@@ -80,6 +81,13 @@ body {
 
 h1, h2, h3 {
   font-family: 'Comfortaa', 'Open Sans', 'Roboto', sans-serif;
+}
+
+header h1 {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
 }
 
 nav {
@@ -152,7 +160,6 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   padding: 1em;
-  max-width: 80em;
 }
 
 footer p {
@@ -178,7 +185,7 @@ footer ul a {
   text-decoration: none;
 }
 
-footer svg {
+svg {
   width: 1em;
   padding: .25em;
   margin-right: .166em;
