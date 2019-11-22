@@ -28,7 +28,8 @@
   /* Colors */
   --main-green-color: #4caf50;
   --dark-green-color: #2e7d32;
-  --main-orange-color: #ff9300;
+  --main-orange-color: #f57c00;
+  --dark-orange-color: #e65100;
 
   font-family: 'Comfortaa', 'Roboto', sans-serif;
 
@@ -159,7 +160,7 @@ nav a:active {
 }
 
 footer {
-  background: #0c2461;
+  background: var(--dark-green-color);
   color: #fff;
   font-size: 1.2em;
   display: grid;

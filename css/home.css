@@ -4,7 +4,7 @@ main {
 main>section {
   width: 100%;
   /* position: relative; */
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -59,7 +59,7 @@ main>section {
   100% {height: 0px;}
 }
 
-#about {
+main section:nth-child(1n+2) {
   background-color: var(--dark-green-color);
   background: linear-gradient(144deg,
       rgba(255,255,255,0) 0%,
@@ -73,12 +73,27 @@ main>section {
       rgba(255,255,255,0) 85%,
       rgba(255,255,255,0) 100%
     ) var(--dark-green-color);
-  box-shadow: 0 0 10px #888;
+  /* box-shadow: 0 0 10px #888; */
   color: #fff;
   overflow: hidden;
   box-sizing: border-box;
 }
-#about picture {
+main section:nth-child(2n+3) {
+  background-color: var(--dark-orange-color);
+  background: linear-gradient(-144deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0) 14%,
+      rgba(255,255,255,0.2) 14%,
+      rgba(255,255,255,0.2) 37%,
+      rgba(255,255,255,0) 37%,
+      rgba(255,255,255,0) 66%,
+      rgba(255,255,255,0.2) 66%,
+      rgba(255,255,255,0.2) 85%,
+      rgba(255,255,255,0) 85%,
+      rgba(255,255,255,0) 100%
+    ) var(--dark-orange-color);
+}
+main section:nth-child(1n+2) picture {
   width: 100%;
   height: 50%;
   float: right;
@@ -86,26 +101,32 @@ main>section {
   margin: 0;
   filter: drop-shadow(-1px 0px 5px rgba(50, 50, 0, 0.5));
 }
-#about img {
+main section:nth-child(2n+3) picture {
+  float: left;
+}
+main section:nth-child(1n+2) img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   -webkit-clip-path: polygon(0% 0, 100% 0, 100% 66%, 0% 100%);
   clip-path: polygon(0% 0, 100% 0, 100% 66%, 0% 100%);
 }
-#about p {
+main section:nth-child(1n+2) p {
   margin: .75em 5vw .75em 0;
   font-size: 1.2em;
   font-weight: 500;
-  max-width: 60em;
+  /* max-width: 60em; */
 }
-#about h2 {
+main section:nth-child(2n+3) p {
+  margin: .75em 0 .75em 5vw;
+}
+main section:nth-child(1n+2) h2 {
   margin: 0;
   font-size: 3em;
   padding-top: 20vmin;
   text-align: center;
 }
-#about p, #about h2 {
+main section:nth-child(1n+2) p, main section:nth-child(1n+2) h2 {
   padding-left: 5vw;
   padding-right: 5vw;
 }
@@ -142,27 +163,46 @@ main>section {
   }
 }
 
+#skills img {
+  width: 10em;
+  border-radius: 2em;
+}
+#skills h2 {
+  font-size: 2em;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 50em) {
-  #about picture {
+  main>section {
+    height: 100vh;
+  }
+  main section:nth-child(1n+2) picture {
     height: 100%;
     width: 60%;
   }
-  #about img {
+  main section:nth-child(2n+3) picture {
+    height: 100%;
+    width: 60%;
+  }
+  main section:nth-child(1n+2) img {
     -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 33% 100%);
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 33% 100%);
   }
-  #about p, #about h2 {
+  main section:nth-child(2n+3) img {
+    -webkit-clip-path: polygon(0% 0, 100% 0, 66% 100%, 0% 100%);
+    clip-path: polygon(0% 0, 100% 0, 66% 100%, 0% 100%);
+  }
+  main section:nth-child(1n+2) p, main section:nth-child(1n+2) h2 {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  #about h2 {
+  main section:nth-child(1n+2) h2 {
     /* margin-top: 5vw; */
   }
 }
 
 @media only screen and (min-width: 50em) and (min-height: 50em) {
-  #about p {
+  main section:nth-child(1n+2) p {
     font-size: 1.5em;
   }
 }
@@ -173,8 +213,12 @@ main>section {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #about picture {
+  main section:nth-child(1n+2) picture {
     height: 100%;
     width: 66.66%;
+  }
+  main section:nth-child(2n+3) picture {
+    height: 100%;
+    width: 50%;
   }
 }

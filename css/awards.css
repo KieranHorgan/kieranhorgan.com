@@ -29,6 +29,14 @@ main {
   box-sizing: border-box;
 }
 
+main a {
+  color: var(--main-primary-color);
+  text-decoration: inherit;
+}
+main a:hover, main a:active {
+  color: #00fff7;
+}
+
 main section {
   flex: 1 1 auto;
   padding-bottom: 1em;
@@ -44,7 +52,9 @@ main h2 {
 main p {
   text-align: center;
   margin: .2em;
-  font-size: 1.16em;
+}
+main p, section>ul>li {
+  font-size: 1.15em;
 }
 
 table {
